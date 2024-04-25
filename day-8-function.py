@@ -20,7 +20,6 @@ coverage = 5
 paint_calc(height=test_h, width=test_w, cover=coverage)
 
 
-
 # Write your code below this line 👇
 def prime_checker(number):
   if number/1==number and number/number == 1 and number%2 != 0 and number%3 != 0:
@@ -32,3 +31,4 @@ def prime_checker(number):
 #Do NOT change any of the code below👇
 n = int(input()) # Check this number
 prime_checker(number=n)
+

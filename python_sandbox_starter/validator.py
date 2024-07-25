@@ -1,5 +1,8 @@
 # Example of a custom module to be imported
+# goal of this module is to validate email addresses
 
+
+#import regular expression
 import re
 
 

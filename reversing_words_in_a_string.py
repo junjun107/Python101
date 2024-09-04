@@ -8,6 +8,9 @@ Example (Input --> Output)
 "Hi There." --> "There. Hi"
 
 def reverse(st):
-    arr = st.split(" ")
-    newarr=[arr[1], arr[0]]
-    return " ".join(newarr)
+    arr = st.split()
+    arr.reverse()
+    return ' '.join(arr)
+
+# def reverse(st):
+#     return ' '.join(st.split()[::-1])

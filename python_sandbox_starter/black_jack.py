@@ -20,7 +20,12 @@ while player_sum < 21:
 
     if player_choice == 'y':
         player_random_numbers.append(new_random_number)
+        player_sum = sum(player_random_numbers)
         print(f"Your new card is {new_random_number}, your have {player_random_numbers}, total is {player_sum} ")
     else:
         computer_random_numbers.append(new_random_number)
-
+        computer_sum = sum(computer_random_numbers)
+        if computer_sum < 17:
+            computer_random_numbers.append(new_random_number)
+            computer_sum = sum(computer_random_numbers)
+        print(f"Computer cards are {computer_random_numbers}, total is {computer_sum}")
